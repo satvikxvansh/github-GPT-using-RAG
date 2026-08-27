@@ -95,14 +95,12 @@ export default function ChatWindow({
           placeholder={
             activeCollection ? "Ask a question..." : "Index a repo first"
           }
-          className="flex-1 bg-ink border border-line rounded px-3 py-2 font-sans text-sm
-                     focus-visible:border-amber outline-none disabled:opacity-50"
+          className="flex-1 bg-ink border border-line rounded px-3 py-2 font-sans text-sm focus-visible:border-amber outline-none disabled:opacity-50"
         />
         <button
           type="submit"
           disabled={isDisabled || !question.trim()}
-          className="bg-amber text-ink font-mono text-sm font-semibold px-4 py-2 rounded
-                     disabled:opacity-50 disabled:cursor-not-allowed"
+          className="bg-amber text-ink font-mono text-sm font-semibold px-4 py-2 rounded disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Send
         </button>

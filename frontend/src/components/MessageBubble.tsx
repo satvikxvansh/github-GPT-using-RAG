@@ -1,5 +1,6 @@
 import type { ChatMessage } from "../types/api";
 import SourcesList from "./SourcesList";
+import ReactMarkdown from 'react-markdown';
 
 interface MessageBubbleProps {
   message: ChatMessage;
