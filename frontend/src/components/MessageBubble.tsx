@@ -18,7 +18,7 @@ export default function MessageBubble({ message }: MessageBubbleProps) {
             : "bg-ink border border-line text-text font-sans"
         }`}
       >
-        <p className="whitespace-pre-wrap">{message.content}</p>
+        <p className="whitespace-pre-wrap"><ReactMarkdown>{message.content}</ReactMarkdown></p>
 
         {!isUser && message.sources && message.sources.length > 0 && (
           <SourcesList sources={message.sources} />
